@@ -7,7 +7,7 @@ function SearchBar(props) {
       <div class="input-group">
          <input type="text" class="form-control" placeholder="Search" />
          <span class="input-group-btn">
-             <button type="button" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+             <button type="button" class="btn btn-default">Click</button>
          </span>
       </div>
    </form>

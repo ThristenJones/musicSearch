@@ -2,24 +2,30 @@ import React from "react";
 
 function MusicTable (props) {
     return(
-        <div className= "row row-space">
-        <thead>
-            <tr>
+        <table>
+            <thead>
                 <th>
-                    props.songs
+                   TITLE
                 </th>
                 <th>
-                    props.songs.artist
+                   ALBUM
+                </th>
+                
+                <tbody>
+                <td>{ props.songs }</td>
+                </tbody>
+                <th>
+                   ARTIST
                 </th>
                 <th>
-                    props.songs.album
+                   GENRE
                 </th>
                 <th>
-                    props.songs.genre
+                   REALEASE DATE
                 </th>
-            </tr>
-        </thead>
-        </div>
+                   
+         </thead>
+        </table>
     )
     
 }
