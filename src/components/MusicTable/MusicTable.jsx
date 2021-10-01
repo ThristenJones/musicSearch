@@ -3,28 +3,49 @@ import React from "react";
 function MusicTable (props) {
     return(
         <table>
-            <thead>
+        <thead>
+
+            
                 <th>
-                   TITLE
+                    Song Title
+                </th>
+               
+                <th>
+                    Artist
                 </th>
                 <th>
-                   ALBUM
-                </th>
-                
-                <tbody>
-                <td>{ props.songs }</td>
-                </tbody>
-                <th>
-                   ARTIST
+                    Album
                 </th>
                 <th>
-                   GENRE
+                    Genre
                 </th>
                 <th>
-                   REALEASE DATE
+                Release Date
                 </th>
-                   
-         </thead>
+            
+        </thead>
+        <tbody> 
+            
+            {props.songs.map(song => { 
+                return (
+                    <tr>
+                        <td>{song.title}</td>
+                        <td>{song.artist}</td>
+                        <td>{song.album}</td>
+                        <td>{song.genre}</td>
+                        <td>{song.releaseDate}</td>
+
+                        
+
+                    </tr>
+                    
+                    
+
+                )
+
+            })};
+        
+        </tbody> 
         </table>
     )
     

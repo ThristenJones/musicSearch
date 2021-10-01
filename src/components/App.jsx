@@ -15,19 +15,24 @@ class App extends Component {
     }
 
     componentDidMount(){
-        axios.get('http://www.devcodecampmusiclibrary.com/')
+        axios.get("http://www.devcodecampmusiclibrary.com/api/music")
         .then(response => this.setState({songs:response.data}))
+        
 
     }
+    
+    
 
     render(){
         return(
-            <div>
-                <NavigationBar />
-                <SearchBar />
-                <MusicTable songs ={this.state.songs} />
+           <div>   
+            <SearchBar />
+           <NavigationBar />
+           <MusicTable songs = {this.state.songs} />
            
-            </div>
+
+           </div>
+            
         )
     }
 
