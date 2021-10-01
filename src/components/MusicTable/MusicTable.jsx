@@ -9,7 +9,6 @@ function MusicTable (props) {
                 <th>
                     Song Title
                 </th>
-               
                 <th>
                     Artist
                 </th>

@@ -9,16 +9,16 @@ function NavigationBar(props) {
         <a class="nav-link active" aria-current="page" href="#">Song title</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Artist</a>
+        <a class="nav-link" href= "#">Artist</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Album</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Genre</a>
+        <a class="nav-link" href= "#">Genre</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Release date</a>
+        <a class="nav-link" href= "#">Release date</a>
       </li>
     </ul> 
     </nav>
