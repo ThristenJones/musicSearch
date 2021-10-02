@@ -11,7 +11,8 @@ import NavigationBar from './NavigationBar/NavigationBar';
 class App extends Component {
     constructor(props){
     super(props)
-    this.state = {songs:[], music: ''}
+    this.state = {songs:[], 
+                  music: ''}
     }
 
     componentDidMount(){
@@ -34,7 +35,7 @@ class App extends Component {
     render(){
         return(
            <div>   
-            <SearchBar handleState = {this.handleChange} />
+            <SearchBar handleState = {this.handleChange} music = {this.state.music} />
            <NavigationBar />
            <MusicTable songs = {this.state.songs} />
            
