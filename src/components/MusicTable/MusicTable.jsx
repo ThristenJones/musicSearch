@@ -34,14 +34,8 @@ function MusicTable (props) {
                         <td>{song.genre}</td>
                         <td>{song.releaseDate}</td>
 
-                        
-
                     </tr>
-                    
-                    
-
                 )
-
             })};
         
         </tbody> 

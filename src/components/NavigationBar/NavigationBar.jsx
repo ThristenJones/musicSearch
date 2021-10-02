@@ -9,7 +9,7 @@ function NavigationBar(props) {
         <a class="nav-link active" aria-current="page" href="#">Song title</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href= "#">Artist</a>
+        <a class="nav-link" href= "{props.songs">Artist</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Album</a>

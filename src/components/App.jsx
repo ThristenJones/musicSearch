@@ -11,13 +11,21 @@ import NavigationBar from './NavigationBar/NavigationBar';
 class App extends Component {
     constructor(props){
     super(props)
-    this.state = {songs:[] }
+    this.state = {songs:[], music: ''}
     }
 
     componentDidMount(){
         axios.get("http://www.devcodecampmusiclibrary.com/api/music")
         .then(response => this.setState({songs:response.data}))
-        
+    
+
+    }
+
+    handleChange(event) {
+        event.preventDefault()
+        this.setState({
+            music: event.target.value
+        });
 
     }
     
@@ -26,7 +34,7 @@ class App extends Component {
     render(){
         return(
            <div>   
-            <SearchBar />
+            <SearchBar handleState = {this.handleChange} />
            <NavigationBar />
            <MusicTable songs = {this.state.songs} />
            
